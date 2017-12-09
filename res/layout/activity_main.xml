@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#878787">
+
+    <com.fq.pitu_view.GamePintuLayout
+        android:id="@+id/id_gamepintu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:layout_centerInParent="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_gamepintu"
+        android:layout_margin="5dp">
+        
+        <TextView 
+            android:id="@+id/id_level"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="#ea7821"
+            android:textStyle="bold"
+            android:background="@drawable/textbg"/>
+        
+        <TextView 
+            android:id="@+id/id_time"
+            android:textSize="20sp"
+            android:textColor="#ea7821"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="120"
+            android:background="@drawable/textbg"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
